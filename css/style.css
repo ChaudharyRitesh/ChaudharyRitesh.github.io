@@ -1,0 +1,177 @@
+:root {
+    --primary-color:#F4A261;
+    --primary-color-light: #E76F51;
+
+    --color-bg-light:#FAFAFF;
+    
+
+    --text-dark:#4a4a4a;
+    --text-medium: #6e6e6e;
+    --text-white: #fff;
+
+    --default-font-size:1.6rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.7;
+    font-weight: 400;
+    -webkit-text-smoothing: antialiased;
+    /* background: #fff; */
+    /* font-size: var(--default-font-size); */
+}
+
+::selection {
+    background: var(--primary-color-light);
+    color: #fff;
+}
+
+/* ======================================================= */
+
+/* Utilities classes */
+
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.flex {
+    display:flex;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.btn{
+    background: transparent ;
+    padding: 1.3rem 2.8rem;
+    color: #fff;
+    border: 1px solid white;
+    text-transform: uppercase;
+    transition: all .4s ease;
+}
+
+.btn:hover,
+.btn:active {
+    background: white;
+    color: #333;
+    cursor: pointer;
+}
+/* ======================================================= */
+
+
+/* ========================================================== */
+/* header starts here */
+
+.header {
+    background-image:linear-gradient(to right bottom, rgba(46, 61, 196, 0.7),rgba(144, 64, 248, 0.712)), url("../img/ritesh.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height:100vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+    /* position:relative; */
+    
+}
+
+.nav {
+    padding: 2rem 0;
+}
+
+.nav .logo-text {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: var(--default-font-size);
+    margin: 1rem 2rem;
+    border-bottom: 3px solid transparent;
+    padding-bottom: .4rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.links a:hover {
+    border-color:var(--primary-color-light);
+}
+
+.details {
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.details .hell {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--text-white);
+}
+
+.details .cd-headline {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-white);
+}
+.details .span1 {
+    margin: 1.5rem 0;
+}
+
+.details .cd-headline .cd-words-wrapper {
+    font-size: 1.9rem;
+    font-weight: 200;
+}
+
+.details .cd-headline.loading-bar .cd-words-wrapper::after {
+    background: linear-gradient(to right, #3fa34d,#7ae582);
+}
+
+
+.start .get-started {
+    font-size: 1.4rem;
+    background: transparent;
+}
+
+.get-started:hover,
+.get-started:active {
+    background:var(--primary-color-light);
+    color: var(--text-white);
+    cursor: pointer;
+}
+/* header ends here */
+/* ============================================= */
+
